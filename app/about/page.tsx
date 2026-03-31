@@ -211,7 +211,7 @@ export default function AboutPage() {
               <div className="flex justify-center lg:justify-start">
                 <div className="rounded-2xl overflow-hidden w-full max-w-md h-[450px]">
                   <img
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=700&fit=crop"
+                    src="/mal-co.png"
                     alt="Priya Sharma"
                     className="w-full h-full object-cover"
                   />
@@ -223,11 +223,11 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#1b111c] to-[#2d1f35]">
+     <section className="py-20 px-4 bg-gradient-to-b from-[#1b111c] to-[#2d1f35]">
         <div className="max-w-6xl mx-auto text-center">
           <ScrollAnimation animation="fadeUp">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 capitalize">
-              {/* How We Work */}
+           
               our award recognized
             </h2>
             <p className="text-[#9497a1] max-w-3xl mx-auto mb-16">
@@ -276,7 +276,8 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> 
+      
 
       {/* Contact Us Section */}
       <section className="py-20 px-4 bg-[#1b111c]">
@@ -306,7 +307,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <span className="text-white font-medium">Phone number</span>
-                    <p className="text-[#9497a1]">+91 123 456 7890</p>
+                    <p className="text-[#9497a1]">+91 9836432398</p>
                   </div>
                   <div>
                     <span className="text-white font-medium">Address</span>
