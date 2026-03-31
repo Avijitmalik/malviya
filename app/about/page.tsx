@@ -37,7 +37,7 @@ export default function AboutPage() {
             <ScrollAnimation animation="fadeLeft">
               <div className="rounded-2xl overflow-hidden h-[400px] lg:h-[500px]">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%2022217-Q2nVCUzAKn0te2jPYRY2WcFPh4HQBO.png"
+                  src="/malviyallogo.png"
                   alt="Our Story"
                   className="w-full h-full object-cover"
                 />

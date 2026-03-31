@@ -88,7 +88,7 @@ export default function Header() {
         </Link>
 
         {/* Navigation */}
-        {/* <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8">
           <Link
             href="/about"
             className="text-white text-sm hover:text-[#ff0007] transition-colors"
@@ -154,60 +154,9 @@ export default function Header() {
           >
             Contact
           </Link>
-        </nav> */}
+        </nav> 
 
-        <nav className="hidden md:flex items-center gap-8">
-          <Link
-            href="/about"
-            className={`text-sm transition-colors ${
-              pathname === "/about"
-                ? "text-[#ff0007]"
-                : "text-white hover:text-[#ff0007]"
-            }`}
-          >
-            About Us
-          </Link>
-
-          <div
-            className="relative"
-            onMouseEnter={() => setShowServicesDropdown(true)}
-            onMouseLeave={() => setShowServicesDropdown(false)}
-          >
-            <button
-              className={`text-sm transition-colors ${
-                pathname.startsWith("/services")
-                  ? "text-[#ff0007]"
-                  : "text-white hover:text-[#ff0007]"
-              }`}
-            >
-              Services
-            </button>
-
-            {/* Dropdown remains same */}
-          </div>
-
-          <Link
-            href="/blog"
-            className={`text-sm transition-colors ${
-              pathname.startsWith("/blog")
-                ? "text-[#ff0007]"
-                : "text-white hover:text-[#ff0007]"
-            }`}
-          >
-            Blog
-          </Link>
-
-          <Link
-            href="/contact"
-            className={`text-sm transition-colors ${
-              pathname === "/contact"
-                ? "text-[#ff0007]"
-                : "text-white hover:text-[#ff0007]"
-            }`}
-          >
-            Contact
-          </Link>
-        </nav>
+ 
         {/* Login Button */}
         <Link
           href="https://malviyacapital.investwell.app/app/#/login"
