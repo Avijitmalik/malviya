@@ -71,7 +71,8 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full py-4 px-6 md:px-12 bg-[#1b111c] relative">
+   
+    <header className="w-full py-4 px-6 md:px-12 bg-[#1b111c] sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">

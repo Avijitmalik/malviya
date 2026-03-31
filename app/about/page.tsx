@@ -307,7 +307,7 @@ export default function AboutPage() {
                     <span className="text-white font-medium">
                       Email Address
                     </span>
-                    <p className="text-[#9497a1]">info@malviyacapital.com</p>
+                    <p className="text-[#9497a1]">services@malviyacapital.com</p>
                   </div>
                   <div>
                     <span className="text-white font-medium">Phone number</span>
