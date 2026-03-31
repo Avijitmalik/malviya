@@ -53,13 +53,13 @@ export default function HeroSection() {
               <ArrowRight className="w-4 h-4" />
             </Button>
             </Link>
-            <Button
+            {/* <Button
               variant="outline"
               className="border-white text-white hover:bg-white/10 text-sm font-medium flex items-center gap-2 bg-transparent px-12 py-6 rounded-md"
             >
               <Smartphone className="w-4 h-4" />
               Explore Our App
-            </Button>
+            </Button> */}
           </div>
         </ScrollAnimation>
       </div>

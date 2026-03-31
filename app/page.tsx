@@ -26,7 +26,7 @@ export default function Home() {
       <TestimonialSection />
       {/* <VideoTestimonialSection /> */}
       <BlogSection />
-      <TestimonialCarousel/>
+      {/* <TestimonialCarousel/> */}
       <FAQSection />
       <ContactSection />
       <Footer />

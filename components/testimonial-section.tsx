@@ -5,18 +5,18 @@ import { ScrollAnimation } from "@/components/scroll-animation"
 
 const testimonials = [
   {
-    quote: "App X has completely changed the way we manage payrolls. The platform is easy to use, and their support team is second to none!",
-    name: "Moana Kale",
+    quote: "Managing Director of Jaya Coconut Oil Pvt. Ltd. & N.K.K.M Industries Pvt. Ltd. I had a great experience with Malviya Capital for my mutual fund investments. Their team provided clear guidance and helped me choose the right funds based on my financial goals and risk profile. The entire process was well-managed. I truly appreciate their professionalism and timely support. I would highly recommend Malviya Capital to anyone looking for reliable advice on mutual fund investments.",
+    name: "Ankkit Modi",
     avatar: "/placeholder.svg?height=48&width=48&query=professional woman headshot",
   },
   {
-    quote: "I am becoming a huge Andry Onufriy fan. Every CSS course he does teaches something new and useful.",
-    name: "Moana Kale",
+    quote: "Working with Malviya Capital has been a seamless experience for my loan and investment planning. Their team provided practical advice and ensured I understood every step of the process. I value their honest approach and timely assistance, which made everything much easier to manage. Highly recommended for anyone seeking dependable financial guidance.- Vikash Kochar Director of Best Buy Air Condition",
+    name: "Jitendra Sirohia",
     avatar: "/placeholder.svg?height=48&width=48&query=professional man headshot",
   },
   {
-    quote: "Working with CSS is becoming easier and easier as tools improve. I find myself writing very few media queries these days.",
-    name: "Moana Kale",
+    quote: "Malviya Capital has been a reliable partner in managing my loan requirements and investments. Their expertise and structured approach helped me make well-informed financial decisions. The team is proactive, supportive, and always available to address queries. I am very satisfied with their services and would gladly recommend them.",
+    name: "Vikash Kochar",
     avatar: "/placeholder.svg?height=48&width=48&query=business woman headshot",
   },
 ]
