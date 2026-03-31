@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
@@ -12,22 +13,27 @@ const teamData = [
   {
     role: "Senior Financial Advisor",
     description: "Dedicated to your financial success",
+    image: "/mal-award-1.png",
   },
   {
     role: "Investment Specialist",
     description: "Helping you grow wealth strategically",
+     image: "/mal-award-2.png",
   },
   {
     role: "Wealth Manager",
     description: "Focused on long-term financial stability",
+     image: "/mal-award-3.png",
   },
   {
     role: "Risk Advisor",
     description: "Managing and minimizing financial risks",
+       image: "/mal-award-4.png",
   },
   {
     role: "Tax Consultant",
     description: "Optimizing your tax efficiency",
+     image: "/mal-award-6.png",
   },
 ];
 
@@ -67,12 +73,24 @@ export default function TeamCarousel() {
                 className="pl-4 md:basis-1/2 lg:basis-1/3"
               >
                 <div
-                  className={`p-8 rounded-2xl border border-white/10 transition-all duration-500 ${
+                  className={`p-6 rounded-2xl border border-white/10 transition-all duration-500 ${
                     current === index
                       ? "scale-105 bg-[#251a28]"
                       : "opacity-60 scale-90"
                   }`}
                 >
+                  {/* Image */}
+                  <div className="w-full h-48 mb-4 overflow-hidden rounded-xl">
+                    <Image
+                      src={item.image}
+                      alt={item.role}
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Content */}
                   <h3 className="text-xl font-bold text-white mb-2">
                     {item.role}
                   </h3>
