@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { ArrowLeft, Clock } from "lucide-react"
+import { ArrowLeft, ArrowRight, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ScrollAnimation } from "@/components/scroll-animation"
 import { blogPosts } from "@/lib/blog-data"
@@ -99,9 +99,12 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
               <p className="text-[#9497a1] mb-6">
                 Our expert advisors are here to help you make informed financial decisions. Book a consultation today.
               </p>
-              <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-8 py-6 rounded-lg text-lg">
-                Book Consultation
-              </Button>
+                <Link href={"/contact"}>
+                  <button className="bg-[#ff0007] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#cc0006] transition-colors flex items-center gap-2">
+                    Book Consultation
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </Link>
             </div>
           </ScrollAnimation>
         </div>

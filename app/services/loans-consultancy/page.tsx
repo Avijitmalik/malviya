@@ -2,9 +2,10 @@
 
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { FileText, CheckCircle2 } from "lucide-react"
+import { FileText, CheckCircle2, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ScrollAnimation } from "@/components/scroll-animation"
+import Link from "next/link"
 
 export default function LoansConsultancyPage() {
   return (
@@ -68,9 +69,12 @@ export default function LoansConsultancyPage() {
 
                 </div>
 
-                <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-8 py-6 rounded-lg text-lg mt-6">
-                  Book Consultation
-                </Button>
+                 <Link href={"/contact"}>
+                  <button className="bg-[#ff0007] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#cc0006] transition-colors flex items-center gap-2">
+                    Book Consultation
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </Link>
               </div>
             </ScrollAnimation>
 
@@ -135,10 +139,12 @@ export default function LoansConsultancyPage() {
                     <p className="text-[#9497a1]">Get up to 80% of property value</p>
                   </div>
                 </div>
-
-                <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-8 py-6 rounded-lg text-lg mt-6">
-                  Book Consultation
-                </Button>
+   <Link href={"/contact"}>
+                  <button className="bg-[#ff0007] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#cc0006] transition-colors flex items-center gap-2">
+                    Book Consultation
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </Link>
               </div>
             </ScrollAnimation>
           </div>
@@ -174,10 +180,12 @@ export default function LoansConsultancyPage() {
                   </div>
 
                 </div>
-
-                <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-8 py-6 rounded-lg text-lg mt-6">
-                  Book Consultation
-                </Button>
+   <Link href={"/contact"}>
+                  <button className="bg-[#ff0007] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#cc0006] transition-colors flex items-center gap-2">
+                    Book Consultation
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </Link>
               </div>
             </ScrollAnimation>
 
@@ -238,10 +246,12 @@ export default function LoansConsultancyPage() {
                     <p className="text-[#9497a1]">Quick processing and disbursement</p>
                   </div>
                 </div>
-
-                <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-8 py-6 rounded-lg text-lg mt-6">
-                  Book Consultation
-                </Button>
+   <Link href={"/contact"}>
+                  <button className="bg-[#ff0007] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#cc0006] transition-colors flex items-center gap-2">
+                    Book Consultation
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </Link>
               </div>
             </ScrollAnimation>
           </div>
@@ -277,9 +287,12 @@ export default function LoansConsultancyPage() {
                   </div> */}
                 </div>
 
-                <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-8 py-6 rounded-lg text-lg mt-6">
-                  Book Consultation
-                </Button>
+                  <Link href={"/contact"}>
+                  <button className="bg-[#ff0007] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#cc0006] transition-colors flex items-center gap-2">
+                    Book Consultation
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </Link>
               </div>
             </ScrollAnimation>
 

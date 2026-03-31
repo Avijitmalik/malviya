@@ -2,9 +2,10 @@
 
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { PieChart, CheckCircle2 } from "lucide-react"
+import { PieChart, CheckCircle2, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ScrollAnimation } from "@/components/scroll-animation"
+import Link from "next/link"
 
 export default function WealthPlanningPage() {
   return (
@@ -75,9 +76,12 @@ export default function WealthPlanningPage() {
                   </div>
                 </div>
 
-                <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-8 py-6 rounded-lg text-lg">
-                  Book Consultation
-                </Button>
+               <Link href={"/contact"}>
+                  <button className="bg-[#ff0007] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#cc0006] transition-colors flex items-center gap-2">
+                    Book Consultation
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </Link>
               </div>
             </ScrollAnimation>
           </div>

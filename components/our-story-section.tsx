@@ -1,5 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 
 export function OurStorySection() {
   return (
@@ -41,11 +43,12 @@ export function OurStorySection() {
             className="rounded-3xl p-8 lg:p-12 flex flex-col justify-center items-center"
             style={{ background: 'linear-gradient(135deg, #ff0007 0%, #8b0000 100%)' }}
           >
-            <Button 
-              className="bg-white text-[#ff0007] hover:bg-gray-100 text-lg lg:text-xl font-bold px-8 py-6 rounded-full"
-            >
-              Book Consultation
-            </Button>
+              <Link href={"/contact"}>
+                             <button className="bg-[#ff0007] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#cc0006] transition-colors flex items-center gap-2">
+                               Book Consultation
+                               <ArrowRight className="w-5 h-5" />
+                             </button>
+                           </Link>
           </div>
         </div>
       </div>

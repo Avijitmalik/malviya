@@ -2,9 +2,10 @@
 
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { Shield, CheckCircle2 } from "lucide-react"
+import { Shield, CheckCircle2, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ScrollAnimation } from "@/components/scroll-animation"
+import Link from "next/link"
 
 export default function InsuranceGuidancePage() {
   return (
@@ -67,10 +68,12 @@ export default function InsuranceGuidancePage() {
                     <p className="text-[#9497a1]">Tax benefits.</p>
                   </div>
                 </div>
-
-                <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-8 py-6 rounded-lg text-lg mt-6">
-                  Book Consultation
-                </Button>
+   <Link href={"/contact"}>
+                  <button className="bg-[#ff0007] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#cc0006] transition-colors flex items-center gap-2">
+                    Book Consultation
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </Link>
               </div>
             </ScrollAnimation>
 
@@ -139,10 +142,12 @@ export default function InsuranceGuidancePage() {
                     <p className="text-[#9497a1]">Personal accident insurance</p>
                   </div>
                 </div>
-
-                <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-8 py-6 rounded-lg text-lg mt-6">
-                  Book Consultation
-                </Button>
+   <Link href={"/contact"}>
+                  <button className="bg-[#ff0007] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#cc0006] transition-colors flex items-center gap-2">
+                    Book Consultation
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </Link>
               </div>
             </ScrollAnimation>
           </div>

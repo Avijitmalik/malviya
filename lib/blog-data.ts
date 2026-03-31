@@ -23,9 +23,9 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
     description:
       "Achieve your life goals with structured wealth planning. Align your investments, savings, and risk management for long-term success.",
-    image:
-      "/placeholder.svg?height=120&width=180&query=wealth+planning+financial+growth+strategy",
-    metaDescription:
+  image:
+    "/wealth.png",
+      metaDescription:
       "Discover how wealth planning helps you align investments, savings, and life goals for long-term financial success and stability.",
     content: `
       <p>Wealth planning is more than just investing—it’s about creating a structured roadmap for your financial future.</p>
@@ -59,8 +59,8 @@ export const blogPosts: BlogPost[] = [
     description:
       "Mutual funds offer a powerful way to grow your wealth with professional management and diversification. Start your investment journey today.",
     image:
-      "/placeholder.svg?height=120&width=180&query=mutual+funds+investment+growth+chart",
-    metaDescription:
+      "/mutual.png",
+      metaDescription:
       "Learn how mutual funds help you grow wealth through diversification, SIPs, and expert fund management. Start investing smarter today.",
     content: `
       <p>Mutual funds are one of the most popular investment options for individuals looking to grow their wealth over time. They allow investors to pool money into professionally managed portfolios consisting of stocks, bonds, or other securities.</p>
@@ -87,8 +87,8 @@ export const blogPosts: BlogPost[] = [
     description:
       "Confused by multiple loan options? Discover how expert loan consultancy helps you secure the best deal while avoiding financial pitfalls.",
     image:
-      "/placeholder.svg?height=120&width=180&query=loan+finance+consulting+paperwork",
-    metaDescription:
+      "/loan.png",
+      metaDescription:
       "Find the right loan with expert consultancy. Compare lenders, reduce interest burden, and improve approval chances with professional guidance.",
     content: `
       <p>In today’s fast-paced financial landscape, loans have become an essential tool for achieving major life goals—whether it’s purchasing a home, funding a business, or managing personal expenses.</p>
@@ -115,8 +115,8 @@ export const blogPosts: BlogPost[] = [
     description:
       "Protect your finances and loved ones with the right insurance strategy designed to safeguard against life’s unexpected risks.",
     image:
-      "/placeholder.svg?height=120&width=180&query=insurance+protection+shield+family+concept",
-    metaDescription:
+      "/insurance.png",
+      metaDescription:
       "Get expert insurance guidance to choose the right life, health, and general insurance policies for complete financial protection.",
     content: `
       <p>Life is unpredictable, and financial uncertainties can arise at any time. Insurance acts as a safety net, protecting you and your loved ones.</p>
@@ -147,8 +147,8 @@ export const blogPosts: BlogPost[] = [
     description:
       "Explore how corporate and government bonds provide stable income, lower risk, and portfolio diversification for long-term financial security.",
     image:
-      "/placeholder.svg?height=120&width=180&query=government+bonds+finance+stability+concept",
-    metaDescription:
+      "/cop-bond.png",
+      metaDescription:
       "Learn how bonds offer stable returns, predictable income, and diversification benefits for a balanced investment portfolio.",
     content: `
       <p>In an investment world often dominated by market volatility, bonds stand out as a reliable option for those seeking stability and predictable income.</p>
@@ -176,8 +176,8 @@ export const blogPosts: BlogPost[] = [
     description:
       "Take your investments to the next level with PMS—tailored strategies designed to maximize returns while managing risk effectively.",
     image:
-      "/placeholder.svg?height=120&width=180&query=portfolio+management+finance+analytics+dashboard",
-    metaDescription:
+      "/portfolio.png",
+      metaDescription:
       "Discover Portfolio Management Services (PMS) offering personalized investment strategies for high-net-worth investors.",
     content: `
       <p>For investors seeking a more personalized and strategic approach to wealth creation, Portfolio Management Services (PMS) offer a powerful solution. Unlike traditional investment avenues, PMS provides customized portfolios designed specifically around an investor’s financial goals, risk appetite, and investment horizon.</p>

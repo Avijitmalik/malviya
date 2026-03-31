@@ -6,6 +6,8 @@ import { ArrowRight, Award, Users, Target, TrendingUp } from "lucide-react";
 import { ScrollAnimation } from "@/components/scroll-animation";
 import Link from "next/link";
 import Image from "next/image";
+import TeamCarousel from "@/components/team-section-carsual";
+
 
 export default function AboutPage() {
   return (
@@ -223,7 +225,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-     <section className="py-20 px-4 bg-gradient-to-b from-[#1b111c] to-[#2d1f35]">
+     {/* <section className="py-20 px-4 bg-gradient-to-b from-[#1b111c] to-[#2d1f35]">
         <div className="max-w-6xl mx-auto text-center">
           <ScrollAnimation animation="fadeUp">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 capitalize">
@@ -276,7 +278,9 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section> 
+      </section>  */}
+
+<TeamCarousel/>
       
 
       {/* Contact Us Section */}
