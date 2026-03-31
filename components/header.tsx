@@ -88,7 +88,7 @@ export default function Header() {
         </Link>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        {/* <nav className="hidden md:flex items-center gap-8">
           <Link
             href="/about"
             className="text-white text-sm hover:text-[#ff0007] transition-colors"
@@ -154,9 +154,105 @@ export default function Header() {
           >
             Contact
           </Link>
-        </nav> 
+        </nav>  */}
 
- 
+ <nav className="hidden md:flex items-center gap-8">
+  <Link
+    href="/about"
+    className={`text-sm transition-colors ${
+      pathname === "/about"
+        ? "text-[#ff0007]"
+        : "text-white hover:text-[#ff0007]"
+    }`}
+  >
+    About Us
+  </Link>
+
+  <div
+    className="relative"
+    onMouseEnter={() => setShowServicesDropdown(true)}
+    onMouseLeave={() => setShowServicesDropdown(false)}
+  >
+    <button
+      className={`text-sm transition-colors ${
+        pathname.startsWith("/services")
+          ? "text-[#ff0007]"
+          : "text-white hover:text-[#ff0007]"
+      }`}
+    >
+      Services
+    </button>
+
+    {showServicesDropdown && (
+      <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[900px] z-50">
+        <div className="bg-[#2a1f2e] rounded-2xl shadow-2xl p-8">
+          <div className="grid grid-cols-2 gap-6">
+            {services.map((service, index) => (
+              <Link
+                key={index}
+                href={`/services/${service.slug}`}
+                className={`flex items-start gap-4 p-4 rounded-xl transition-colors group ${
+                  pathname === `/services/${service.slug}`
+                    ? "bg-[#251a28]"
+                    : "bg-[#1b111c] hover:bg-[#251a28]"
+                }`}
+              >
+                <div
+                  className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style={{
+                    background:
+                      "linear-gradient(to bottom, #ff0007, #8b0000)",
+                  }}
+                >
+                  <service.icon
+                    className="w-6 h-6 text-white"
+                    strokeWidth={1.5}
+                  />
+                </div>
+                <div>
+                  <h4
+                    className={`font-semibold mb-1 transition-colors ${
+                      pathname === `/services/${service.slug}`
+                        ? "text-[#ff0007]"
+                        : "text-white group-hover:text-[#ff0007]"
+                    }`}
+                  >
+                    {service.title}
+                  </h4>
+                  <p className="text-[#9497a1] text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    )}
+  </div>
+
+  <Link
+    href="/blog"
+    className={`text-sm transition-colors ${
+      pathname.startsWith("/blog")
+        ? "text-[#ff0007]"
+        : "text-white hover:text-[#ff0007]"
+    }`}
+  >
+    Blog
+  </Link>
+
+  <Link
+    href="/contact"
+    className={`text-sm transition-colors ${
+      pathname === "/contact"
+        ? "text-[#ff0007]"
+        : "text-white hover:text-[#ff0007]"
+    }`}
+  >
+    Contact
+  </Link>
+</nav>
         {/* Login Button */}
         <Link
           href="https://malviyacapital.investwell.app/app/#/login"

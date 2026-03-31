@@ -12,7 +12,7 @@ const featuredBlog = {
     "Discover how wealth planning helps you align investments, savings, and life goals for long-term financial success and stability.",
   author: "By malviya capital",
   image:
-    "/placeholder.svg?height=500&width=600&query=abstract colorful swirl art orange purple",
+    "/wealth.png",
 
   content: `
 Wealth planning is more than just investing—it’s about creating a structured roadmap for your financial future.
@@ -45,7 +45,7 @@ const sideBlogs = [
     description:
       "Mutual funds offer a powerful way to grow your wealth with professional management and diversification. Start your investment journey today.",
     image:
-      "/placeholder.svg?height=120&width=180&query=mutual funds investment growth chart",
+      "/mutual.png",
     metaDescription:
       "Learn how mutual funds help you grow wealth through diversification, SIPs, and expert fund management. Start investing smarter today.",
     content: `
@@ -73,7 +73,7 @@ With the power of compounding and long-term discipline, mutual funds can help yo
     description:
       "Confused by multiple loan options? Discover how expert loan consultancy helps you secure the best deal while avoiding financial pitfalls.",
     image:
-      "/placeholder.svg?height=120&width=180&query=loan finance consulting paperwork",
+      "/loan.png",
     metaDescription:
       "Find the right loan with expert consultancy. Compare lenders, reduce interest burden, and improve approval chances with professional guidance.",
     content: `
@@ -99,7 +99,7 @@ Loan consultancy ensures you get the right loan, on the right terms, at the righ
     description:
       "Protect your finances and loved ones with the right insurance strategy designed to safeguard against life’s unexpected risks.",
     image:
-      "/placeholder.svg?height=120&width=180&query=insurance protection shield family concept",
+      "/insurance.png",
     metaDescription:
       "Get expert insurance guidance to choose the right life, health, and general insurance policies for complete financial protection.",
     content: `

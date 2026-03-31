@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import { ArrowRight, Award, Users, Target, TrendingUp } from "lucide-react";
 import { ScrollAnimation } from "@/components/scroll-animation";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -35,11 +36,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left - Image */}
             <ScrollAnimation animation="fadeLeft">
-              <div className="rounded-2xl overflow-hidden h-[400px] lg:h-[500px]">
-                <img
-                  src="/malviyallogo.png"
-                  alt="Our Story"
-                  className="w-full h-full object-cover"
+              <div className="rounded-2xl overflow-hidden h-[400px] lg:h-[500px] flex items-center justify-center">
+                <Image
+                  src="/malaviyalogo.png"
+                  alt="Logo"
+                  width={1200}
+                  height={600}
+                  className="object-contain w-full h-full"
+                  priority
                 />
               </div>
             </ScrollAnimation>
