@@ -135,8 +135,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-[#9497a1] text-sm">
-                24A, 1st Floor, Parijat Building, Shakespeare Sarani, Elgin,
-                Kolkata, West Bengal 700017 MS, Mississippi, 39201
+                24A, 1st Floor, Parijat Building, Shakespeare Sarani, Elgin, Kolkata, West Bengal 700017
               </li>
             </ul>
             {/* Map */}
