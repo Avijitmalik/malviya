@@ -121,10 +121,10 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:ensome@info.co.us"
+                  href="mailto:services@malviyacapital.com"
                   className="text-[#9497a1] text-sm hover:text-[#ff0007] transition-colors"
                 >
-                  ensome@info.co.us
+                  
                 </a>
               </li>
               <li>
@@ -132,12 +132,11 @@ export default function Footer() {
                   href="tel:+16012015580"
                   className="text-[#9497a1] text-sm hover:text-[#ff0007] transition-colors"
                 >
-                  +1 601-201-5580
+                    +91 9836432398
                 </a>
               </li>
               <li className="text-[#9497a1] text-sm">
-                1642 Washington Avenue, Jackson,
-                <br />
+                24A, 1st Floor, Parijat Building, Shakespeare Sarani, Elgin, Kolkata, West Bengal 700017
                 MS, Mississippi, 39201
               </li>
             </ul>
@@ -147,7 +146,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-[#5a5a74]/30 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[#9497a1] text-sm">
-            Ensome© 2022 All Rights Reserved
+            Malviya Capital.© 2026 All Rights Reserved
           </p>
           <div className="flex items-center gap-8">
             <Link

@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Smartphone } from "lucide-react"
 import { ScrollAnimation } from "@/components/scroll-animation"
+import Link from "next/link"
 
 export default function HeroSection() {
   return (
@@ -46,10 +47,12 @@ export default function HeroSection() {
         {/* CTA Buttons */}
         <ScrollAnimation animation="fadeUp" delay={0.3}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link  href={"/contact"}>
             <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white text-sm font-medium flex items-center gap-2 py-6 px-12 rounded-md">
               Free Consultation
               <ArrowRight className="w-4 h-4" />
             </Button>
+            </Link>
             <Button
               variant="outline"
               className="border-white text-white hover:bg-white/10 text-sm font-medium flex items-center gap-2 bg-transparent px-12 py-6 rounded-md"

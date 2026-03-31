@@ -8,12 +8,12 @@ export default function CTASection() {
   return (
     <section className="relative w-full py-24 md:py-32 px-6 md:px-12 overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
+      {/* <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url('/placeholder.svg?height=600&width=1400&query=business team meeting office professional dark')`,
         }}
-      />
+      /> */}
       <div className="absolute inset-0 bg-[#1b111c]/80" />
 
       <div className="max-w-4xl mx-auto relative z-10 text-center">

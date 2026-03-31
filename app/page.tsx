@@ -11,6 +11,7 @@ import { BlogSection } from "@/components/blog-section"
 import { FAQSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
 import Footer from "@/components/footer"
+import TestimonialCarousel from "@/components/testinomial"
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <TestimonialSection />
       {/* <VideoTestimonialSection /> */}
       <BlogSection />
+      <TestimonialCarousel/>
       <FAQSection />
       <ContactSection />
       <Footer />

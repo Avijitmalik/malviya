@@ -56,7 +56,8 @@ export default function AppPreviewSection() {
             {/* App Store Badges */}
             <div className="flex items-center justify-center lg:justify-start gap-4">
               <a
-                href="#"
+                href="https://apps.apple.com/in/app/malviya-capital/id1552145280"
+                target="_blank"
                 className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <svg
@@ -76,7 +77,8 @@ export default function AppPreviewSection() {
                 </div>
               </a>
               <a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.iw.malviyacapital&pcampaignid=web_share"
+                target="_blank"
                 className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24">
