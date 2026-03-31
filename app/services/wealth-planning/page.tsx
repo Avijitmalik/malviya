@@ -10,7 +10,7 @@ export default function WealthPlanningPage() {
   return (
     <main className="min-h-screen bg-[#1b111c]">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -34,9 +34,9 @@ export default function WealthPlanningPage() {
             {/* Left - Image */}
             <ScrollAnimation animation="fadeLeft">
               <div className="rounded-2xl overflow-hidden h-[400px]">
-                <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" 
-                  alt="Wealth Planning" 
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+                  alt="Wealth Planning"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -51,23 +51,27 @@ export default function WealthPlanningPage() {
                 <p className="text-[#9497a1] leading-relaxed">
                   Our holistic wealth planning approach covers all aspects of your financial life, from retirement planning to estate management.
                 </p>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">Long-term wealth creation through market-linked growth</p>
+                    <p className="text-[#9497a1]">Plan for your future</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]"> Stable returns with lower risk exposure</p>
+                    <p className="text-[#9497a1]"> Customized wealth planning strategies</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">Balanced approach combining equity and debt</p>
+                    <p className="text-[#9497a1]">Goal-oriented investment planning</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">Save tax under Section 80C while investing for growth</p>
+                    <p className="text-[#9497a1]">Tax-efficient solutions</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
+                    <p className="text-[#9497a1]">Retirement planning</p>
                   </div>
                 </div>
 

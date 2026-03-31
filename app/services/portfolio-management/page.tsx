@@ -10,7 +10,7 @@ export default function PortfolioManagementPage() {
   return (
     <main className="min-h-screen bg-[#1b111c]">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -34,9 +34,9 @@ export default function PortfolioManagementPage() {
             {/* Left - Image */}
             <ScrollAnimation animation="fadeLeft">
               <div className="rounded-2xl overflow-hidden h-[400px]">
-                <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%2022217-wKvmbPObzZYROshVpNN0PeS2BvZfgj.png" 
-                  alt="Portfolio Management" 
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%2022217-wKvmbPObzZYROshVpNN0PeS2BvZfgj.png"
+                  alt="Portfolio Management"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -51,23 +51,27 @@ export default function PortfolioManagementPage() {
                 <p className="text-[#9497a1] leading-relaxed">
                   Our dedicated portfolio managers actively monitor and adjust your investments to maximize returns while managing risk effectively.
                 </p>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">The service aims to Fund your dream home.</p>
+                    <p className="text-[#9497a1]">Personalized investment solutions.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]"> Clients can Get up to 90% of said disbursement amount.</p>
+                    <p className="text-[#9497a1]">Customized portfolio management.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">The offering includes Competitive interest rates.</p>
+                    <p className="text-[#9497a1]">Discretionary and non-discretionary options.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">The loans come with Flexible repayment options.</p>
+                    <p className="text-[#9497a1]">Expertise in equity, debt, and alternative investments.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
+                    <p className="text-[#9497a1]">Performance-driven strategies.</p>
                   </div>
                 </div>
 

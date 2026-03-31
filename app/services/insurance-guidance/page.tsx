@@ -10,7 +10,7 @@ export default function InsuranceGuidancePage() {
   return (
     <main className="min-h-screen bg-[#1b111c]">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -40,23 +40,31 @@ export default function InsuranceGuidancePage() {
                 <p className="text-[#9497a1] leading-relaxed">
                   Expert Home Loan Advisory to Turn Your Property Dreams into Reality
                 </p>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">The service aims to Fund your dream home.</p>
+                    <p className="text-[#9497a1]">Secure your loved ones' future</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]"> Clients can Get up to 90% of said disbursement amount.</p>
+                    <p className="text-[#9497a1]">Term life insurance.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">The offering includes Competitive interest rates.</p>
+                    <p className="text-[#9497a1]">Whole life insurance.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">The loans come with Flexible repayment options.</p>
+                    <p className="text-[#9497a1]">Unit-linked insurance plans.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
+                    <p className="text-[#9497a1]">Retirement plans.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
+                    <p className="text-[#9497a1]">Tax benefits.</p>
                   </div>
                 </div>
 
@@ -69,9 +77,9 @@ export default function InsuranceGuidancePage() {
             {/* Right - Image */}
             <ScrollAnimation animation="fadeRight">
               <div className="rounded-2xl overflow-hidden h-[400px]">
-                <img 
-                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop" 
-                  alt="Home Loan" 
+                <img
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
+                  alt="Home Loan"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -87,9 +95,9 @@ export default function InsuranceGuidancePage() {
             {/* Left - Image */}
             <ScrollAnimation animation="fadeLeft">
               <div className="rounded-2xl overflow-hidden h-[400px]">
-                <img 
-                  src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop" 
-                  alt="Loan Against Property" 
+                <img
+                  src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop"
+                  alt="Loan Against Property"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -104,23 +112,31 @@ export default function InsuranceGuidancePage() {
                 <p className="text-[#9497a1] leading-relaxed">
                   Use your residential or commercial property to secure funds for business or personal needs.
                 </p>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">The purpose of the loan is to Unlock value against your property</p>
+                    <p className="text-[#9497a1]">Protect your assets, health, and well-being</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">It allows you to Use your property for potential</p>
+                    <p className="text-[#9497a1]">Home insurance</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">It offers Competitive interest rates</p>
+                    <p className="text-[#9497a1]">Motor insurance</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">It provides Flexible repayment options</p>
+                    <p className="text-[#9497a1]">Health insurance</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
+                    <p className="text-[#9497a1]">Travel insurance</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
+                    <p className="text-[#9497a1]">Personal accident insurance</p>
                   </div>
                 </div>
 

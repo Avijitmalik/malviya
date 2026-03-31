@@ -10,7 +10,7 @@ export default function FixedDepositsPage() {
   return (
     <main className="min-h-screen bg-[#1b111c]">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -34,9 +34,9 @@ export default function FixedDepositsPage() {
             {/* Left - Image */}
             <ScrollAnimation animation="fadeLeft">
               <div className="rounded-2xl overflow-hidden h-[400px]">
-                <img 
-                  src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=600&fit=crop" 
-                  alt="Fixed Deposits" 
+                <img
+                  src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=600&fit=crop"
+                  alt="Fixed Deposits"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -51,24 +51,13 @@ export default function FixedDepositsPage() {
                 <p className="text-[#9497a1] leading-relaxed">
                   Corporate fixed deposits offer an excellent alternative to traditional bank FDs, providing higher returns while maintaining safety through credit-rated companies.
                 </p>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">The service aims to Fund your dream home.</p>
+                    <p className="text-[#9497a1]">Secure, high-yielding investments.</p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]"> Clients can Get up to 90% of said disbursement amount.</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">The offering includes Competitive interest rates.</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#ff0007] flex-shrink-0 mt-1" />
-                    <p className="text-[#9497a1]">The loans come with Flexible repayment options.</p>
-                  </div>
+
                 </div>
 
                 <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-8 py-6 rounded-lg text-lg">
