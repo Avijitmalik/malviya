@@ -316,7 +316,7 @@ export default function AboutPage() {
                   <div>
                     <span className="text-white font-medium">Address</span>
                     <p className="text-[#9497a1]">
-                      Kolkata, West Bengal, India
+                     24A, 1st Floor, Parijat Building, Shakespeare Sarani, Elgin, Kolkata, West Bengal 700017
                     </p>
                   </div>
                 </div>

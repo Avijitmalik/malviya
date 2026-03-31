@@ -9,20 +9,10 @@ const _inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Malviya Capital - Smarter Loans & Investments',
   description: 'We analyse your financial needs and tailor loan, investment, and insurance solutions-so your money works as hard as you do.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/malaviyalogo.png',
       },
     ],
     apple: '/apple-icon.png',
