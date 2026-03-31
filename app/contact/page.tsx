@@ -35,7 +35,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-white mb-1">Email</h3>
-                    <p className="text-[#9497a1]">contact@malviyacapital.com</p>
+                    <p className="text-[#9497a1]">services@malviyacapital.com</p>
                   </div>
                 </div>
 
@@ -46,7 +46,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-white mb-1">Phone</h3>
-                    <p className="text-[#9497a1]">+1 (201) 555-0123</p>
+                    <p className="text-[#9497a1]">+91 9836432398</p>
                   </div>
                 </div>
 
@@ -57,7 +57,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-white mb-1">Address</h3>
-                    <p className="text-[#9497a1]">1642 Washington Avenue, Jackson, MS 39201</p>
+                    <p className="text-[#9497a1]">24A, 1st Floor, Parijat Building, Shakespeare Sarani, Elgin, Kolkata, West Bengal 700017</p>
                   </div>
                 </div>
 
