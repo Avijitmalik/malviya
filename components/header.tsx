@@ -14,7 +14,7 @@ import {
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-const services = [
+export const services = [
   {
     title: "Loans Consultancy",
     description:

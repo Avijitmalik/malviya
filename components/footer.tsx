@@ -10,23 +10,22 @@ import {
 import Image from "next/image";
 
 const quickLinks = [
-  { name: "Home", href: "#" },
-  { name: "Solutions", href: "#" },
-  { name: "Blog", href: "#" },
-  { name: "Contacts", href: "#" },
-  { name: "Our team", href: "#" },
-  { name: "About Us", href: "#" },
-  { name: "Services", href: "#" },
-  { name: "FAQ", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Blog", href: "/blog" },
+  { name: "Contacts", href: "/contact" },
+  { name: "About Us", href: "/about" },
+  { name: "FAQ", href: "/faq" },
 ];
 
 const serviceLinks = [
-  { name: "Pages", href: "#" },
-  { name: "Elements", href: "#" },
-  { name: "FAQ", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "Site map", href: "#" },
-];
+  { name: "Loans Consultancy", href: "/services/loans-consultancy" },
+  { name: "Mutual Funds", href: "/services/mutual-funds" },
+  { name: "Wealth Planning", href: "/services/wealth-planning" },
+  { name: "Insurance Guidance", href: "/services/insurance-guidance" },
+  { name: "Portfolio Management Services", href: "/services/portfolio-management" },
+  { name: "Corporate and Govt Bonds", href: "/services/corporate-bonds" },
+  { name: "Corporate Fixed Deposits", href: "/services/fixed-deposits" },
+]
 
 const socialLinks = [
   { icon: Facebook, href: "#" },
@@ -142,8 +141,8 @@ export default function Footer() {
             </ul>
             {/* Map */}
             <div className="mt-6 rounded-xl overflow-hidden border border-white/10">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.910497090307!2d88.3528762!3d22.5450253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277da58fafcb9%3A0xdc962de8215bad47!2sMalviya%20Capital!5e0!3m2!1sen!2sin!4v1774965230321!5m2!1sen!2sin" width="300" height="200"  style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-               
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.910497090307!2d88.3528762!3d22.5450253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277da58fafcb9%3A0xdc962de8215bad47!2sMalviya%20Capital!5e0!3m2!1sen!2sin!4v1774965230321!5m2!1sen!2sin" width="300" height="200" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
             </div>
           </div>
         </div>
