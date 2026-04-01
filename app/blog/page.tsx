@@ -94,7 +94,7 @@ export default function BlogPage() {
             </p>
           </ScrollAnimation>
           <ScrollAnimation animation="fadeUp" delay={0.2}>
-            <div className="flex gap-3 max-w-md mx-auto">
+            <div className="flex flex-col lg:flex-row xl:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
