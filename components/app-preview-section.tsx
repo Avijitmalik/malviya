@@ -52,7 +52,7 @@ export default function AppPreviewSection() {
             </p>
 
             {/* App Store Badges */}
-            <div className="flex flex-col lg:flex-row xs:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6">
+            <div className="flex flex-row lg:flex-row xs:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6">
               <a
                 href="https://apps.apple.com/in/app/malviya-capital/id1552145280"
                 target="_blank"

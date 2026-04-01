@@ -141,7 +141,7 @@ export default function Footer() {
             </ul>
             {/* Map */}
             <div className="mt-6 rounded-xl overflow-hidden border border-white/10">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.910497090307!2d88.3528762!3d22.5450253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277da58fafcb9%3A0xdc962de8215bad47!2sMalviya%20Capital!5e0!3m2!1sen!2sin!4v1774965230321!5m2!1sen!2sin" width="300" height="200" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.910497090307!2d88.3528762!3d22.5450253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277da58fafcb9%3A0xdc962de8215bad47!2sMalviya%20Capital!5e0!3m2!1sen!2sin!4v1774965230321!5m2!1sen!2sin" className="w-full h-full"   style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
           </div>
