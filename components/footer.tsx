@@ -116,7 +116,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white font-semibold mb-6">Cantact info</h3>
+            <h3 className="text-white font-semibold mb-6">Contact info</h3>
             <ul className="space-y-3">
               <li>
                 <a
