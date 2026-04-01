@@ -86,7 +86,7 @@ export default function TeamCarousel() {
                       alt={item.role}
                       width={400}
                       height={300}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-fill"
                     />
                   </div>
 

@@ -33,23 +33,25 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-20 px-4">
+      <section className="px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left - Image */}
             <ScrollAnimation animation="fadeLeft">
-              <div className="rounded-2xl overflow-hidden h-[400px] lg:h-[500px] flex items-center justify-center">
-                <Image
-                  src="/malaviyalogo.png"
-                  alt="Logo"
-                  width={1200}
-                  height={600}
-                  className="object-contain w-full h-full"
-                  priority
-                />
-              </div>
-            </ScrollAnimation>
-
+  <div className="rounded-2xl overflow-hidden -mt-10 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
+    <Image
+      src="/malaviyalogo.png"
+      alt="Logo"
+      width={1200}
+      height={600}
+      sizes="(max-width: 640px) 100vw,
+             (max-width: 1024px) 80vw,
+             1200px"
+      className="object-contain w-full h-full"
+      priority
+    />
+  </div>
+</ScrollAnimation>
             {/* Right - Content */}
             <ScrollAnimation animation="fadeRight">
               <div className="space-y-6">
@@ -281,8 +283,6 @@ export default function AboutPage() {
       </section>  */}
 
 <TeamCarousel/>
-      
-
       {/* Contact Us Section */}
       <section className="py-20 px-4 bg-[#1b111c]">
         <div className="max-w-6xl mx-auto">

@@ -28,12 +28,12 @@ const serviceLinks = [
 ]
 
 const socialLinks = [
-  { icon: Facebook, href: "#" },
+  { icon: Facebook, href: " https://www.facebook.com/share/16PZndCcB2/" },
   { icon: Twitter, href: "#" },
   { icon: Linkedin, href: "#" },
   { icon: Youtube, href: "#" },
-  { icon: Instagram, href: "#" },
-  { icon: Mail, href: "#" },
+  { icon: Instagram, href: "https://www.instagram.com/malviyacapital2018" },
+  { icon: Mail, href: "services@malviyacapital.com " },
 ];
 
 export default function Footer() {
