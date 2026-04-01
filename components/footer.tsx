@@ -31,7 +31,7 @@ const socialLinks = [
   { icon: Facebook, href: " https://www.facebook.com/share/16PZndCcB2/" },
   { icon: Twitter, href: "#" },
   { icon: Linkedin, href: "#" },
-  { icon: Youtube, href: "#" },
+  { icon: Youtube, href: " https://youtube.com/@financiallymalviyajee?si=R6aTsn7XqpO0_QFE" },
   { icon: Instagram, href: "https://www.instagram.com/malviyacapital2018" },
   { icon: Mail, href: "services@malviyacapital.com " },
 ];
@@ -72,6 +72,7 @@ export default function Footer() {
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
                   className="w-8 h-8 bg-[#5a5a74]/40 rounded-full flex items-center justify-center hover:bg-[#ff0007] transition-colors"
                 >
                   <social.icon className="w-4 h-4 text-white" />

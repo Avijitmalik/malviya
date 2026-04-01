@@ -10,6 +10,11 @@ import {
   Shield,
   Briefcase,
   FileCheck,
+  ChevronDown,
+  X,
+  Menu,
+  Plus,
+  Minus,
 } from "lucide-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -69,6 +74,8 @@ export const services = [
 export default function Header() {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   return (
    
@@ -78,7 +85,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2">
           <div className="flex items-center">
             <Image
-              src="/malaviyalogo.png" // make sure file is inside /public
+              src="/malaviyalogo.png"
               alt="Logo"
               width={120}
               height={40}
@@ -87,76 +94,6 @@ export default function Header() {
             />
           </div>
         </Link>
-
-        {/* Navigation */}
-        {/* <nav className="hidden md:flex items-center gap-8">
-          <Link
-            href="/about"
-            className="text-white text-sm hover:text-[#ff0007] transition-colors"
-          >
-            About Us
-          </Link>
-          <div
-            className="relative"
-            onMouseEnter={() => setShowServicesDropdown(true)}
-            onMouseLeave={() => setShowServicesDropdown(false)}
-          >
-            <button className="text-white text-sm hover:text-[#ff0007] transition-colors cursor-pointer">
-              Services
-            </button>
-
-
-            {showServicesDropdown && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[900px] z-50">
-                <div className="bg-[#2a1f2e] rounded-2xl shadow-2xl p-8">
-                  <div className="grid grid-cols-2 gap-6">
-                    {services.map((service, index) => (
-                      <Link
-                        key={index}
-                        href={`/services/${service.slug}`}
-                        className="flex items-start gap-4 p-4 rounded-xl bg-[#1b111c] hover:bg-[#251a28] transition-colors group"
-                      >
-                        <div
-                          className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
-                          style={{
-                            background:
-                              "linear-gradient(to bottom, #ff0007, #8b0000)",
-                          }}
-                        >
-                          <service.icon
-                            className="w-6 h-6 text-white"
-                            strokeWidth={1.5}
-                          />
-                        </div>
-                        <div>
-                          <h4 className="text-white font-semibold mb-1 group-hover:text-[#ff0007] transition-colors">
-                            {service.title}
-                          </h4>
-                          <p className="text-[#9497a1] text-sm leading-relaxed">
-                            {service.description}
-                          </p>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-          <Link
-            href="/blog"
-            className="text-white text-sm hover:text-[#ff0007] transition-colors"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/contact"
-            className="text-white text-sm hover:text-[#ff0007] transition-colors"
-          >
-            Contact
-          </Link>
-        </nav>  */}
-
         <nav className="hidden md:flex items-center gap-8">
           <Link
             href="/about"
@@ -183,7 +120,7 @@ export default function Header() {
             </button>
 
             {showServicesDropdown && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[900px] z-50">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[calc(100vw-48px)] max-w-[800px] z-50">
                 <div className="bg-[#2a1f2e] rounded-2xl shadow-2xl p-8">
                   <div className="grid grid-cols-2 gap-6">
                     {services.map((service, index) => (
@@ -248,17 +185,116 @@ export default function Header() {
             Contact
           </Link>
         </nav>
-        {/* Login Button */}
-        <Link
-          href="https://malviyacapital.investwell.app/app/#/login"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-6 text-sm font-medium py-4 rounded-md">
-            Login
-          </Button>
-        </Link>
+        {/* Login Button and Mobile Toggle */}
+        <div className="flex items-center gap-4">
+          <Link
+            href="https://malviyacapital.investwell.app/app/#/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:block"
+          >
+            <Button className="bg-[#ff0007] hover:bg-[#cc0006] text-white px-4 py-2 sm:px-6 sm:py-4 text-xs sm:text-sm font-medium rounded-md">
+              Login
+            </Button>
+          </Link>
+          <button
+            className="md:hidden text-white"
+            onClick={() => setMobileMenuOpen(true)}
+            aria-label="Open Menu"
+          >
+            <Menu className="w-6 h-6" />
+          </button>
+        </div>
       </div>
+       {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-50 bg-[#1b111c] p-6 md:hidden overflow-y-auto">
+          
+          {/* Top */}
+          <div className="flex justify-between items-center mb-8">
+            <Image
+              src="/malaviyalogo.png"
+              alt="Logo"
+              width={100}
+              height={40}
+            />
+            <button onClick={() => setMobileMenuOpen(false)}>
+              <X className="w-6 h-6 text-white" />
+            </button>
+          </div>
+
+          {/* Links */}
+          <div className="flex flex-col gap-6">
+            <Link 
+              href="/about" 
+              className="text-white text-lg py-2 w-full block" 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About Us
+            </Link>
+
+            {/* Services */}
+            <div>
+              <button
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                className="flex justify-between items-center w-full text-white text-lg py-2"
+              >
+                Services
+                {mobileServicesOpen ? (
+                  <Minus className="w-5 h-5 text-[#ff0007]" />
+                ) : (
+                  <Plus className="w-5 h-5 text-white" />
+                )}
+              </button>
+
+              {mobileServicesOpen && (
+                <div className="mt-2 flex flex-col">
+                  {services.map((service, index) => (
+                    <Link
+                      key={index}
+                      href={`/services/${service.slug}`}
+                      className="text-[#9497a1] text-base py-3 px-4 hover:text-white hover:bg-[#251a28] transition-colors border-b border-white/5 last:border-0"
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                        setMobileServicesOpen(false);
+                      }}
+                    >
+                      {service.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <Link 
+              href="/blog" 
+              className="text-white text-lg py-2 w-full block" 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Blog
+            </Link>
+
+            <Link 
+              href="/contact" 
+              className="text-white text-lg py-2 w-full block" 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact
+            </Link>
+
+            {/* Login */}
+            <Link 
+              href="https://malviyacapital.investwell.app/app/#/login" 
+              target="_blank"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Button className="w-full bg-[#ff0007] mt-6">
+                Login
+              </Button>
+            </Link>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

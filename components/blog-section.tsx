@@ -125,70 +125,81 @@ Insurance is not just a product—it’s financial security and peace of mind.
 
 export function BlogSection() {
   return (
-    <section className="py-20 px-4 bg-[#1b111c]">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-16 md:py-24 px-6 md:px-12 bg-[#1b111c] overflow-hidden">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <ScrollAnimation animation="fadeUp">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#ff0007] text-center mb-4 text-white">
-            Blogs
-          </h2>
-          <p className="text-[#9497a1] text-center max-w-3xl mx-auto mb-16">
-            Monitor mutual funds, equities, bonds, FDs, PMS & insurance in a
-            secure, unified dashboard. Get statements, goal tracking and review
-            reminders.
-          </p>
+          <div className="text-center mb-16 md:mb-20">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+              Our Latest <span className="text-[#ff0007]">Blogs</span>
+            </h2>
+            <div className="w-20 h-1 bg-[#ff0007] mx-auto mb-6 rounded-full" />
+            <p className="text-[#9497a1] text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+              Insights and updates on wealth creation, market trends, and smart financial management.
+            </p>
+          </div>
         </ScrollAnimation>
 
         {/* Blog Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Featured Blog - Left Side */}
-          <ScrollAnimation animation="fadeLeft">
-            <div className="flex flex-col">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-4">
-                <Image
-                  src={featuredBlog.image || "/placeholder.svg"}
-                  alt={featuredBlog.title}
-                  fill
-                  className="object-cover"
-                />
+          <ScrollAnimation animation="fadeLeft" className="h-full">
+            <Link href="/blog" className="group block h-full">
+              <div className="flex flex-col h-full bg-[#251a28] rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:translate-y-[-8px]">
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <Image
+                    src={featuredBlog.image || "/placeholder.svg"}
+                    alt={featuredBlog.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1b111c] to-transparent opacity-60" />
+                </div>
+                <div className="p-6 md:p-8 flex flex-col flex-grow">
+                  <span className="text-[#ff0007] text-sm font-semibold uppercase tracking-wider mb-3">
+                    {featuredBlog.author}
+                  </span>
+                  <h3 className="text-white font-bold text-2xl md:text-3xl mb-4 group-hover:text-[#ff0007] transition-colors leading-tight">
+                    {featuredBlog.title}
+                  </h3>
+                  <p className="text-[#9497a1] text-sm md:text-base leading-relaxed mb-6 line-clamp-3">
+                    {featuredBlog.excerpt}
+                  </p>
+                  <div className="mt-auto flex items-center text-[#ff0007] font-semibold text-sm group-hover:gap-2 transition-all">
+                    Read More <span>→</span>
+                  </div>
+                </div>
               </div>
-              <span className="text-[#ff0007] text-sm font-medium mb-2">
-                {featuredBlog.author}
-              </span>
-              <h3 className="text-white font-semibold text-xl">
-                {featuredBlog.title}
-              </h3>
-              <p className="text-[#9497a1] text-sm mt-2">
-                {featuredBlog.content}
-              </p>
-            </div>
+            </Link>
           </ScrollAnimation>
 
           {/* Side Blogs - Right Side */}
-          <ScrollAnimation animation="fadeRight">
-            <div className="flex flex-col gap-6">
+          <ScrollAnimation animation="fadeRight" className="h-full">
+            <div className="flex flex-col gap-8">
               {sideBlogs.map((blog, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="relative w-36 h-24 flex-shrink-0 rounded-xl overflow-hidden">
-                    <Image
-                      src={blog.image || "/placeholder.svg"}
-                      alt={blog.title}
-                      fill
-                      className="object-cover"
-                    />
+                <Link key={index} href="/blog" className="group block">
+                  <div className="flex flex-col sm:flex-row gap-6 p-4 rounded-2xl transition-all duration-300 hover:bg-[#251a28]">
+                    <div className="relative w-full sm:w-40 md:w-48 aspect-[16/10] sm:aspect-square md:aspect-[4/3] flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
+                      <Image
+                        src={blog.image || "/placeholder.svg"}
+                        alt={blog.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center">
+                      <span className="text-[#ff0007] text-xs md:text-sm font-semibold uppercase tracking-wider mb-2">
+                        {blog.author}
+                      </span>
+                      <h4 className="text-white font-bold text-lg md:text-xl mb-2 group-hover:text-[#ff0007] transition-colors line-clamp-2">
+                        {blog.title}
+                      </h4>
+                      <p className="text-[#9497a1] text-sm leading-relaxed line-clamp-2 hidden sm:block">
+                        {blog.description}
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex flex-col">
-                    <span className="text-[#ff0007] text-sm font-medium mb-1">
-                      {blog.author}
-                    </span>
-                    <h4 className="text-white font-semibold mb-1 text-xl">
-                      {blog.title}
-                    </h4>
-                    <p className="text-[#9497a1] text-sm leading-relaxed">
-                      {blog.description}
-                    </p>
-                  </div>
-                </div>
+                </Link>
               ))}
             </div>
           </ScrollAnimation>
@@ -196,10 +207,11 @@ export function BlogSection() {
 
         {/* Explore More Button */}
         <ScrollAnimation animation="fadeUp">
-          <div className="flex justify-center">
-            <Link href={"/blog"}>
-              <button className="bg-[#ff0007] hover:bg-[#cc0006] text-white font-semibold px-8 py-3 rounded-lg transition-colors">
-                Explore More Blogs
+          <div className="mt-16 sm:mt-20 flex justify-center">
+            <Link href="/blog">
+              <button className="group relative bg-[#ff0007] hover:bg-[#cc0006] text-white font-bold px-10 py-4 rounded-xl transition-all shadow-lg hover:shadow-[#ff0007]/20 flex items-center gap-2">
+                Explore All Blogs
+                <span className="transition-transform group-hover:translate-x-1">→</span>
               </button>
             </Link>
           </div>

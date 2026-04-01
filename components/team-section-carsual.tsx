@@ -23,7 +23,7 @@ const teamData = [
   {
     role: "Wealth Manager",
     description: "Focused on long-term financial stability",
-     image: "/mal-award-3.png",
+     image: "/mal-award-3-3.png",
   },
   {
     role: "Risk Advisor",
@@ -89,7 +89,6 @@ export default function TeamCarousel() {
                       className="w-full h-full object-fill"
                     />
                   </div>
-
                   {/* Content */}
                   <h3 className="text-xl font-bold text-white mb-2">
                     {item.role}

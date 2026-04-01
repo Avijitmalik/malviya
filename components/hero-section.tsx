@@ -16,14 +16,6 @@ export default function HeroSection() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Badge */}
-        {/* <ScrollAnimation animation="fadeDown" delay={0}>
-          <div className="flex justify-center mb-8">
-            <span className="bg-[#5a5a74]/40 text-white text-sm px-4 py-2 rounded-full">
-              Kolkata · Since 2019
-            </span>
-          </div>
-        </ScrollAnimation> */}
-
         {/* Main Headline */}
         <ScrollAnimation animation="fadeUp" delay={0.1}>
           <div className="text-center mb-6">
@@ -53,13 +45,6 @@ export default function HeroSection() {
               <ArrowRight className="w-4 h-4" />
             </Button>
             </Link>
-            {/* <Button
-              variant="outline"
-              className="border-white text-white hover:bg-white/10 text-sm font-medium flex items-center gap-2 bg-transparent px-12 py-6 rounded-md"
-            >
-              <Smartphone className="w-4 h-4" />
-              Explore Our App
-            </Button> */}
           </div>
         </ScrollAnimation>
       </div>
