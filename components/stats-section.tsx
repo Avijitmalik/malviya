@@ -4,7 +4,7 @@ import { ScrollAnimation } from "@/components/scroll-animation"
 
 const stats = [
   {
-    value: "7+",
+    value: "7",
     label: "Years of Experience",
   },
   {
