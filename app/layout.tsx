@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         url: '/malaviyalogo.png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/malaviyalogo.png',
   },
 }
 
